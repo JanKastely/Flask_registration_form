@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>
+    {% block title %}
+    <img src="/static/register.png" width="30px" alt="Log_in">
+    {% endblock %}
+  </h1>
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+  <form method="post">
+    <input name="username" placeholder="username" id="username" required>
+    <input type="password" name="password" placeholder="password" id="password" required>
+    <input class="btn btn-primary" type="submit" value="Register">
+  </form>
+</div>
+{% endblock %}

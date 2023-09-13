@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+.login-container {
+     max-width: 400px;
+     width: 100%;
+     padding: 40px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     background-color: #fff;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.login-container input{
+    margin: 7px;
+    padding: 10px;
+}
+
+.btn-primary {
+  display: center;
+  margin: 10px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 67px;
+}
+
+

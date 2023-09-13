@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>
+    {% block title %}
+    <img src="/static/log_in.png" width="30px" alt="Log_in">
+    {% endblock %}
+  </h1>
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+  <form method="post">
+    {{ form.hidden_tag() }} {# Přidá anti-CSRF token #}
+    {{ form.username(id="username_Field",class="form-control", required="required", placeholder="Enter your username") }}
+    {{ form.password(id="password_Field",class="form-control", required="required", placeholder="Enter your password") }}
+    {{ form.submit(class="btn btn-primary") }}
+  </form>
+</div>
+{% endblock %}
